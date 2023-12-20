@@ -1,6 +1,6 @@
 # RevealJS + Hugo Default Presentation
 
-***fork from [Reveal-Hugo by @dzello](https://github.com/dzello/reveal-hugo)***
+***template to get started quickly with [Reveal-Hugo by @dzello](https://github.com/dzello/reveal-hugo)***
 
 ## Basics
 
