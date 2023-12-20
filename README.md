@@ -21,7 +21,33 @@ cd my-presentation
 
 5. Added `.gitkeep` to the base Hugo folders so that the full structure comes over in the repo
 
-## Updates you need to make
+## Using this template for your presentation(s)
+
+### Prerequisites
+
+1. Make sure you have [Hugo](https://gohugo.io/) installed:
+
+**Mac**
+
+```shell
+brew install hugo
+```
+
+**Linux**
+
+```shell
+sudo snap install hugo
+```
+
+**Windows**
+
+```shell
+choco install hugo-extended
+```
+
+2. Click `Use this template` from the top right of the repo and create a new repository
+
+### Updates you need to make
 
 1. Update the `go.mod` file with the correct location of your GitHub repo:
 
