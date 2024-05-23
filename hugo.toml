@@ -11,3 +11,63 @@ unsafe = true
 baseName = "index"
 mediaType = "text/html"
 isHTML = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      wrapStandAloneImageWithinParagraph = true
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+    [markup.goldmark.renderer]
+      unsafe = true
+  # [markup.highlight]
+  #   codeFences = true
+  #   style = "monokai"
+
+[params]
+  [params.logo]
+    src = 'https://picsum.photos/200/300'
+    top = '90%'
+    left = '80%'
+    width = '15%'
+  [params.logo-btm-left]
+    src = 'https://picsum.photos/200/300'  # autogen from https://picsum.photos/
+    top = '91%'
+    left = '5%'
+    width = '20%'
+    #opacity = '0.5'
+  [params.appearance]
+    font = 'Open Sans'
+    font_size = 5
+
+[params.reveal_hugo]
+    theme = 'night'
+    margin = 0.1
+    transition = 'slide'
+    transitionSpeed = 'fast'
+    slideNumber = false
+    controls = false
+    hash = true
+    respondToHashChanges = true
+    jumpToSlide = true
+    keyboard = true
+    overview = true
+    fragments = true
+    fragmentInURL = true
+    pause = true
+    progress = true
+    history = false
+    center = true
+    loop = false
+    help = true
+    mouseWheel = false
+    hideAddressBar = true
+    previewLinks = false
+    custom_css = false
+    disable_layout = false
+    display = 'block'
+    load_default_plugins = true
+    
