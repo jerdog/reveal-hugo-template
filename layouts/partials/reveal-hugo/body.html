@@ -1,0 +1,62 @@
+<!-- override this partial to add content before the body tag closes -->
+
+<style>
+    /* this is for adding multi-column support to reveal-hugo */
+    /* source: https://stackoverflow.com/a/47139091 */
+    .multiCol {
+        display: table;
+        table-layout: fixed; // don't fudge depending on content
+        width: 100%;
+        text-align: center; // matter of taste, makes imho sense
+        .col {
+            display: table-cell;
+            vertical-align: middle;
+            width: 50%;
+            padding: 2% 0 2% 3%; // some vertical, and between columns
+            &:first-of-type { padding-left: 0; } // there's nothing before col1
+        }
+    }
+    /* this is for adding h5+ support to reveal-hugo */
+    .reveal h5 {
+        font-size: 0.75em;
+    }
+    .reveal h6 {
+        font-size: 0.5em;
+    }
+    /* this is for modifying default paragraph behavior */
+    .reveal p {
+        font-size: 0.7em;
+        /* display: table; */
+        text-align: center;
+        vertical-align: middle;
+    }
+    /* this is for modifying default list font size */
+    .reveal ul {
+        font-size: 0.75em;
+    }
+    .reveal .speaker-notes {
+        font-size: 18px;
+    }
+    .reveal pre code {
+        display: contents;
+    }
+    .twitter-tweet-rendered {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+</style>
+<script>
+    const headTag = document.getElementsByTagName('head')[0];
+    const styleTag = document.createElement("style");
+
+    styleTag.innerHTML = `
+    :root {
+        --r-main-font: 'Open Sans', sans-serif;
+        --r-heading-font: 'Open Sans', sans-serif;
+        --r-heading-text-shadow: 2px 2px #558ABB;
+    }
+    `;
+    headTag.appendChild(styleTag);
+</script>
